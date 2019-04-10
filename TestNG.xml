@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Automation Tests">
+	<parameter name = "browser" value="CHROME"/> 
+	<listeners>
+		<listener class-name="com.sl.dffr.listeners.TestListener" />
+		<listener class-name="com.sl.dffr.listeners.RetryListener" />
+	</listeners>
+	<test name="Smoke Testcases">
+		<packages>
+			<package name="com.sl.dffr.uitests" />
+		</packages>
+		<!-- <classes>
+   			 <class name="com.sl.dffr.uitests.SmokeTest">
+     			 <methods>
+       				 <include name="ADFFR-935"/>
+     			 </methods>
+    		</class>
+ 		 </classes> --> 
+	</test>
+</suite>
