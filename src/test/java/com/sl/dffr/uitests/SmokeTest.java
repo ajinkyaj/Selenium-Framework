@@ -4,15 +4,17 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import com.sl.dffr.pages.LockProductPage;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import com.sl.dffr.pages.LandingPage;
-import com.sl.dffr.testplan.BaseTest;
-import com.sl.dffr.utilfactory.DatabaseHelpers;
-import com.sl.dffr.utilfactory.DffrHelpers;
-import com.sl.dffr.utilfactory.SeleniumHelpers;
+
+import com.pages.LandingPage;
+import com.pages.LockProductPage;
+import com.testplan.BaseTest;
+import com.utilfactory.DatabaseHelpers;
+import com.utilfactory.DffrHelpers;
+import com.utilfactory.SeleniumHelpers;
+
 import org.testng.mustache.Value;
 
 

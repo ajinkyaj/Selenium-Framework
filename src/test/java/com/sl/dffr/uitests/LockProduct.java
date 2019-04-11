@@ -3,11 +3,12 @@ package com.sl.dffr.uitests;
 import java.util.List;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import com.sl.dffr.pages.LandingPage;
-import com.sl.dffr.pages.LockProductPage;
-import com.sl.dffr.testplan.BaseTest;
-import com.sl.dffr.utilfactory.DatabaseHelpers;
-import com.sl.dffr.utilfactory.DffrHelpers;
+
+import com.pages.LandingPage;
+import com.pages.LockProductPage;
+import com.testplan.BaseTest;
+import com.utilfactory.DatabaseHelpers;
+import com.utilfactory.DffrHelpers;
 
 public class LockProduct extends BaseTest {
 

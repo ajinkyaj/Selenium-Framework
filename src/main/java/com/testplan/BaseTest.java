@@ -1,4 +1,4 @@
-package com.sl.dffr.testplan;
+package com.testplan;
 
 import java.io.File;
 import java.io.IOException;
@@ -12,9 +12,10 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.asserts.SoftAssert;
-import com.sl.dffr.utilfactory.ConfigReader;
-import com.sl.dffr.utilfactory.DatabaseHelpers;
-import com.sl.dffr.utilfactory.WebDriverFactory;
+
+import com.utilfactory.ConfigReader;
+import com.utilfactory.DatabaseHelpers;
+import com.utilfactory.WebDriverFactory;
 
 public class BaseTest {
 
@@ -30,39 +31,21 @@ public class BaseTest {
 	
 	private static String pagesPackage = null;
 	
-	public String productCode = "4192";
-	
-	public String copyProductCode = "57609";
-	
 	public String SQL;
 	
-	public int monthsToEdit = 6;
-	
-	public int percent = 5;
-
 	@BeforeSuite
 	public void testInit() throws Exception {
 		launchBrowser();
 	}
 
 	@BeforeMethod
-	public void testSetup() throws Exception {
-		
-		DatabaseHelpers.delete("delete from MonthlyForecastVersion where ProductId = (select productid from product where productcode = "+productCode+")");
-		
-		// for copy product
-		DatabaseHelpers.delete("delete from [LinkedProducts] where productid = (select productid from product where productcode = " + copyProductCode+")");
-		DatabaseHelpers.update("update p set p.IsProductHasNoHistory = 1, p.islinkedProduct = 0 from Product p where ProductCode = " + copyProductCode);
-
-		// for copy division
-		DatabaseHelpers.delete("delete from LinkedDivision where ProductId = (select productid from product where productcode = " + productCode+")");
-		DatabaseHelpers.update("update Product set HasLinkedDivision = 0 where HasLinkedDivision = 1 and ProductCode = " + productCode);
+	public void testSetup() throws Exception
+	{
 		openURL();
 	}
 
 	@AfterMethod
-	public void testTearDown() throws Exception {
-	}
+	public void testTearDown() throws Exception{	}
 
 	@AfterSuite
 	public void quit() throws Exception {

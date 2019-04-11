@@ -6,9 +6,9 @@ import java.util.Random;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.sl.dffr.pages.LandingPage;
-import com.sl.dffr.pages.LockProductPage;
-import com.sl.dffr.testplan.BaseTest;
+import com.pages.LandingPage;
+import com.pages.LockProductPage;
+import com.testplan.BaseTest;
 
 public class CriticalFunction extends BaseTest{
 	

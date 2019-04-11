@@ -1,4 +1,4 @@
-package com.sl.dffr.utilfactory;
+package com.utilfactory;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
@@ -8,7 +8,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
-import com.sl.dffr.listeners.EventListener;
+
+import com.listeners.EventListener;
 
 public class WebDriverFactory {
 

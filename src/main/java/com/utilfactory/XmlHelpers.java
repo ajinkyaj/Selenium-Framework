@@ -1,4 +1,4 @@
-package com.sl.dffr.utilfactory;
+package com.utilfactory;
 
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.DocumentBuilder;

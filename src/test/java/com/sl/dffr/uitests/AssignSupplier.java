@@ -3,10 +3,11 @@ package com.sl.dffr.uitests;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import com.sl.dffr.pages.AssignSupplierPage;
-import com.sl.dffr.pages.LandingPage;
-import com.sl.dffr.pages.LockProductPage;
-import com.sl.dffr.testplan.BaseTest;
+
+import com.pages.AssignSupplierPage;
+import com.pages.LandingPage;
+import com.pages.LockProductPage;
+import com.testplan.BaseTest;
 
 public class AssignSupplier extends BaseTest {
 

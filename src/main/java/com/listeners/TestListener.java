@@ -1,12 +1,13 @@
-package com.sl.dffr.listeners;
+package com.listeners;
 
 import java.io.IOException;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-import com.sl.dffr.testplan.BaseTest;
-import com.sl.dffr.utilfactory.ConfigReader;
-import com.sl.dffr.utilfactory.ExtentReportHelpers;
+
+import com.testplan.BaseTest;
+import com.utilfactory.ConfigReader;
+import com.utilfactory.ExtentReportHelpers;
 
 public class TestListener implements ITestListener {
 

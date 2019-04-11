@@ -1,4 +1,4 @@
-package com.sl.dffr.utilfactory;
+package com.utilfactory;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -15,7 +15,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.sl.dffr.testplan.BaseTest;
+import com.testplan.BaseTest;
 
 public class SeleniumHelpers {
 
