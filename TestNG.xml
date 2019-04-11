@@ -8,12 +8,12 @@
 	</listeners>
 	<test name="Smoke Testcases">
 		<packages>
-			<package name="com.sl.dffr.uitests" />
+			<package name="com.uitests" />
 		</packages>
 		<!-- <classes>
-   			 <class name="com.sl.dffr.uitests.SmokeTest">
+   			 <class name="com.uitests.SampleUiTest">
      			 <methods>
-       				 <include name="ADFFR-935"/>
+       				 <include name="Method Name"/>
      			 </methods>
     		</class>
  		 </classes> --> 
